@@ -1,9 +1,7 @@
-// eslint-disable-next-line import/no-unresolved
-import { DateTime } from '../../../../node_modules/luxon/src/luxon.js';
-import { BookList } from './modules/bookList.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
+import BookList from './modules/bookList.js';
 
-// eslint-disable-next-line no-unused-vars
-const bookList = new BookList();
+window.bookList = new BookList();
 
 const Booklink = document.getElementById('book-link');
 const Addlink = document.getElementById('add-link');

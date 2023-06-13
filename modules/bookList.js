@@ -1,7 +1,6 @@
-import { Book } from './book.js';
+import Book from './book.js';
 
-// eslint-disable-next-line import/prefer-default-export
-export class BookList {
+export default class BookList {
   constructor() {
     this.books = [];
     this.addBook();
